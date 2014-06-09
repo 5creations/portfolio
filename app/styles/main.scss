@@ -1,0 +1,244 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import '../bower_components/sass-bootstrap/lib/bootstrap';
+@import 'compass/css3';
+@import 'base';
+@import 'mixins';
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http:fonts.googleapis.com/css?family=Roboto+Slab);
+
+html {
+    font-size: 100%;
+}
+body{background:#000;  padding-bottom: 40px; color: #9d9d9d;  font-size:13px; 
+    //font-family: 'Droid Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Roboto Slab', serif;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+
+.navbar-wrapper .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar-wrapper .navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.clear{clear:both}
+.clear-50{height:50px}
+.clear-75{height:75px}
+.orange{ color: #EF791A}
+.blue{ color: #6ec2c0}
+.light-gray{color:#999}
+
+.font-12 {font-size: 12px !important}
+.font-14 {font-size: 14px}
+.font-16 {font-size: 16px}
+.font-18 {font-size: 18px}
+.font-20 {font-size: 20px}
+.font-22 {font-size: 22px}
+.font-30 {font-size: 30px}
+.font-36 {font-size: 36px}
+.font-46 {font-size: 46px}
+.font-52 {font-size: 52px}
+.font-80 {font-size: 80px}
+
+
+.margin-bottom-30 {margin-bottom:30px}
+
+//.top-nav{background-color: transparent; border: 0 none}
+.top-nav-link{margin: 0 25px;}
+.top-anchor{padding-top:50px; margin:0}
+
+
+.container-inner--about {padding-top:150px; padding-bottom: 50px;}
+.container-inner--contact {padding-top:50px; padding-bottom:50px }
+.container-inner--works {padding-top:150px; padding-bottom:50px }
+
+.home{background: #000 url("../images/street.jpg") no-repeat center top; height:584px; padding-bottom:100px; position: relative }
+.home-heading{color:#fff; margin:0; 
+  padding-top: 200px; 
+  text-shadow: 1px 1px #000000;} 
+.services{background: #393939 url("../images/services-bg.jpg") no-repeat center top; margin-top:0; padding-top:150px; padding-bottom:75px}
+.tools{ margin-top:0; padding-top:50px; padding-bottom:75px; background: #fff}
+.about{ margin-top:0; background: #fff}
+.contact{background: #fafafa}
+.footer{background:#fafafa;padding-bottom:700px }
+
+.section-heading {  margin-top:0; margin-bottom: 15px; color: #fff}
+.section-heading {  color: #666}
+
+.section-slogan {display:block; line-height:2 }
+.section-slogan--about{display: inline}
+.section-paragraph {}
+
+.icon-wrapper{background: #f1f1f1; text-align: center;}
+.services-icons { color: #ccc; display:block; line-height: 1.2 !important; margin: 0 auto }
+
+
+
+
+.icon-heading{  margin: 10px 0;color: #fafafa; }
+.icon-paragraph{ }
+
+.icon-wrapper-circle {
+  background: #444444; 
+  border-radius: 50px 50px 50px 50px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  width: 65px;
+}
+
+.icon-heading-tools { color: #666666; }
+
+.works{background:#f8f8f8}
+.works-heading{ padding-bottom: 10px; border-bottom: 1px #eaeaea solid; margin-bottom: 15px}
+
+.works-piece {margin-bottom: 30px;
+  @include hover-opacity; 
+}
+.works-piece-r {margin-bottom: 30px}
+.works-piece-thumb{}
+.works-thumbnail{border-right: 1px solid #EAEAEA; width: 100%;}
+.works-description-wrapper{background: none repeat scroll 0 0 #FFFFFF; border-bottom: 2px solid #EAEAEA; border-right: 1px solid #EAEAEA; padding: 15px 20px;}
+.works-description {}
+.works-piece-title { color: #90C7E2; display: block; font-weight: normal; margin: 10px 0;}
+
+
+
+
+
+.designer-r {width:100%}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 992px) {
+
+}
+
+/* Extra Small devices (mobiles, 320px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+      /* Remove the edge padding needed for mobile */
+          .marketing {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          /* Navbar positioning foo   */
+          .navbar-wrapper {
+            margin-top: 20px;
+          }
+          .navbar-wrapper .container {
+            padding-left:  15px;
+            padding-right: 15px;
+          }
+          .navbar-wrapper .navbar {
+            padding-left:  0;
+            padding-right: 0;
+          }
+             .section{ margin-top: 40px; } 
+            .services {padding-top: 100px}
+            .container-inner--about {padding-top:100px; padding-bottom:100px }
+            .container-inner--works { padding-top:50px}
+            .container-inner--contact { padding-top: 50px;}
+
+            .home-heading{color:#fff; margin:0; padding-top: 75px;padding-bottom:45px; text-shadow: 1px 1px #000000;} 
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1920px) {}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 208px) and (max-width: 384px) {
+    .works-piece{margin-bottom:40px !important;}
+    .works-piece-r{margin-bottom:40px !important;}
+    .container-inner--about {padding-top:50px; padding-bottom: 0;}
+    .container-inner--contact {padding-top:0; padding-bottom:50px }
+}
+
+/* Small devices (tablets, 768px and up) LANDSCAPE */
+@media (min-width: 480px) and (max-width: 600px) {  
+    .home{background: url("../images/street-l.jpg") no-repeat center top !important; height:270px; padding-bottom:0; position: relative } 
+     .home-heading{color:#fff; margin:0; padding-top: 70px;text-shadow: 1px 1px #000000;} 
+    .font-80{ font-size: 24px !important; }
+    .services{padding-top:60px; padding-bottom:75px}
+}
+
+.box1{
+  @include box-shadow(red 10px 2px 10px);
+  @include border-radius(50px);
+
+// $default-transition-property : all
+// $default-transition-duration : 1s
+// $default-transition-function : false
+// $default-transition-delay    : false
+
+  @include transition-property(width);
+  @include transition-duration(2s);
+  @include transition-timing-function(linear);
+  @include transition-delay (2);
+
+  // @include background-image(linear-gradient(left top, white, #222));
+  @include background-image(linear-gradient(white, #aaaaaa));
+  height:300px; margin-top:100px; width: 700px;float: left; 
+
+  @include rotate(45deg);
+
+  &:hover{
+    width: 300px;
+    @include opacity(1);
+     @include rotate($default-rotate );
+     // @include scale(.5,1)
+     }
+
+}
+.icon-wrapper-tools{ 
+  // background: #F5F5F5; 
+  border-bottom: 5px solid #90C7E2; 
+  padding: 30px 10px;
+
+}
+.services-icons-tools{ color: #666666;line-height: 1.2 !important; 
+
+    // -webkit-transition: -webkit-transform 0.4s ease-out;
+    // -moz-transition: -moz-transform 0.4s ease-out;
+    // transition: transform 0.4s ease-out;
+    // display: block;
+
+
+    @include spin;
+    // @include scale;
+}
+
+
